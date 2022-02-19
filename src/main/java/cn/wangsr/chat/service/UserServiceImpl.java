@@ -1,6 +1,5 @@
 package cn.wangsr.chat.service;
 
-import cn.hutool.system.UserInfo;
 import cn.wangsr.chat.common.CommonConstant;
 import cn.wangsr.chat.common.GlobalException;
 import cn.wangsr.chat.common.ResponseData;
@@ -9,17 +8,13 @@ import cn.wangsr.chat.dao.UserFriendsRepository;
 import cn.wangsr.chat.dao.UserRepository;
 import cn.wangsr.chat.listener.SucEventListener;
 import cn.wangsr.chat.model.*;
-import cn.wangsr.chat.model.QUserFriendsPO;
-import cn.wangsr.chat.model.QUserGroupPO;
-import cn.wangsr.chat.model.QUserInfoPO;
-import cn.wangsr.chat.model.QUserMessagePO;
 import cn.wangsr.chat.model.dto.*;
 import cn.wangsr.chat.util.JwtUtils;
 import com.alibaba.fastjson.JSONObject;
 import com.corundumstudio.socketio.SocketIOClient;
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import org.hibernate.metamodel.model.convert.internal.JpaAttributeConverterImpl;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
